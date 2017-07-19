@@ -1,0 +1,214 @@
+/* ======= CSS RESET http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126 License: none (public domain)=======*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+/*========GENERAL========*/
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*=======TOP-NAV=======*/
+
+.top-nav {
+  width: 98%;
+  line-height: 60px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top-nav li {
+  padding-left: 15px;
+  display: inline-flex;
+  flex-flow: row;
+  vertical-align: middle;
+}
+
+.top-nav .apps img {
+  display: inline-flex;
+  vertical-align: middle;
+  height: 24px;
+}
+
+.top-nav .notifications img {
+  display: inline-flex;
+  vertical-align: middle;
+  height: 21px;
+}
+
+.top-nav .profile img {
+  display: inline-flex;
+  vertical-align: middle;
+  height: 32px;
+  border-radius: 50%;
+}
+
+
+/*=======MAIN=======*/
+
+.main {
+  display: block;
+}
+
+.logo {
+  padding: 135px 0 25px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.logo img {
+  width: 21%;
+}
+
+.searchbox {
+  display: flex;
+  flex-flow: row;
+  margin: 0 auto;
+  width: 585px;
+  box-shadow: 0 1px 4px #AAA;
+}
+
+.searchbox input {
+  width: 545px;
+  height: 35px;
+  border: none;
+  justify-content: center;
+  z-index: 10;
+  outline: none;
+  line-height: 34px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 5px 15px 5px 15px
+  overflow: hidden;
+}
+
+.searchbox a {
+  padding-left: -50px;
+  justify-content: flex-end;
+}
+
+.mic {
+  height: 26px;
+  z-index: 11;
+  padding: 9px 14px 5px 0;
+}
+
+.container-buttons {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  padding-top: 18px;
+}
+
+.container-buttons a:hover {
+  text-decoration: none;
+}
+
+.search-button, .lucky-button {
+  background-color: #F2F2F2;
+  color: #757575;
+  border: solid 1px #F2F2F2;
+  border-radius: 2px;
+  padding: 0 16px;
+  margin: 11px 4px;
+  height: 36px;
+  line-height: 36px;
+}
+
+.search-button:hover, .lucky-button:hover {
+  border: solid 1px #C6C6C6;
+  color: #000;
+}
+
+/*=======FOOTER=======*/
+
+.footer {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+
+span {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  line-height: 40px;
+  background: #F2F2F2;
+  border-top: 1px solid #E4E4E4;
+}
+
+span.footer-left {
+  margin-left: 18px;
+  justify-content: flex-start;
+}
+
+span.footer-right {
+  margin-right: 18px;
+  justify-content: flex-end;
+}
+
+.footer-left ul, .footer-right ul {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+.footer-left ul {
+  width: 34%;
+}
+
+.footer-right ul {
+  width: 35%;
+}
+
+span a{
+  color: #666;
+}
